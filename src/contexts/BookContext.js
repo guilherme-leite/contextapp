@@ -9,7 +9,7 @@ const BookContextProvider = (props) => {
     {title: 'the hero of ages', id: 3},
   ]);
   return (
-    <BookContext.Provider values={books}>
+    <BookContext.Provider value={{books}}>
       {props.children}
     </BookContext.Provider>
   );
