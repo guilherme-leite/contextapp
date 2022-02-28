@@ -26,6 +26,7 @@ import { ThemeContext } from '../contexts/ThemeContext';
 // Stateless function component utilizando useContexte
 
 const BookList = () => {
+  useContext(ThemeContext);
   const { isLightTheme, light, dark } = useContext(ThemeContext)
   const theme = isLightTheme ? light : dark;
   return (
